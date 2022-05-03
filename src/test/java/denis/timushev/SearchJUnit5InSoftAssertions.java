@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class searchJUnit5InSoftAssertions {
+public class SearchJUnit5InSoftAssertions {
 
     @Test
     void searchJUnit5Code() {
