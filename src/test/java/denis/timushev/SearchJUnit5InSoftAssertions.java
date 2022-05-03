@@ -12,7 +12,7 @@ public class SearchJUnit5InSoftAssertions {
     void searchJUnit5Code() {
         open("https://github.com/selenide/selenide");
         $("#wiki-tab").click();
-        $("[id=wiki-pages-filter").setValue("SoftAssertions");
+        $("[id=wiki-pages-filter]").setValue("SoftAssertions");
         $(".wiki-rightbar").$(byText("SoftAssertions")).click();
         $(".markdown-body").shouldBe(text("<div id='first' style='display:none;'>First</div>"));
         $(".markdown-body").shouldBe(text("$(\"#first\").should(visible).click();"));
