@@ -14,7 +14,7 @@ public class SearchJUnit5InSoftAssertions {
         $("#wiki-tab").click();
         $("[id=wiki-pages-filter]").setValue("SoftAssertions");
         $(".wiki-rightbar").$(byText("SoftAssertions")).click();
-        $(".markdown-body").shouldBe(text("<div id='first' style='display:none;'>First</div>"));
-        $(".markdown-body").shouldBe(text("$(\"#first\").should(visible).click();"));
+        $(".markdown-body").shouldHave(text("3. Using JUnit5 extend test class:"));
+        $(".markdown-body").shouldHave(text("$(\"#first\").should(visible).click();"));
     }
 }
